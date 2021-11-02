@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo2Component implements OnInit {
 
-  maVar : string = "Hello les mobile !"
+  maVar : string = "Hello les mobile !";
 
   constructor() { }
 
