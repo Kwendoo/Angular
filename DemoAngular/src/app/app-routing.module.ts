@@ -9,7 +9,8 @@ const routes: Routes = [
   {path : 'home', component : HomeComponent, children : [
     {path : 'enfant', component : EnfantComponent}
   ]},
-  {path : 'about', component : AboutComponent}
+  {path : 'about', component : AboutComponent},
+  {path : 'nouveau', loadChildren : () => import('./nouveau/nouveau.module').then(m => m.NouveauModule)}
 ];
 
 @NgModule({
