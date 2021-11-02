@@ -1,0 +1,5 @@
+<h4>Attribute Binding</h4>
+<p>Contenu de variable : {{maVar}}</p>
+
+<input type="number" [(ngModel)]="maVar" min=0 max=50>
+<input type="button" (click)="changeValue()" [disabled]="change()" value="Click me !">
