@@ -9,6 +9,8 @@ import { EnfantComponent } from './home/enfant/enfant.component';
 import { NavComponent } from './nav/nav.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { FormsModule } from '@angular/forms';
+import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
