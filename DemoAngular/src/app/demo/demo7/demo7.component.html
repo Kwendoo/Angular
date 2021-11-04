@@ -1,0 +1,34 @@
+<h3>Structural Directives</h3>
+<h4>NgIf</h4>
+
+<div (click)="toggle()">
+
+    <p style="cursor: pointer;">Click me!</p>
+
+</div>
+
+<div *ngIf="isToggled">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minima delectus fugiat deserunt, molestiae explicabo deleniti qui, soluta adipisci ratione rerum voluptates voluptatum veniam nisi numquam, doloribus vero ad! Cum.</p>
+</div>
+
+<hr/>
+
+<h4>NgFor</h4>
+<ul style="list-style: none;">
+    <li *ngFor="let movie of liste; let i = index;">
+        {{i}} - {{movie}}
+    </li>
+</ul>
+
+<hr/>
+
+<h4>NgSwitch</h4>
+
+<input [(ngModel)]="maVariable"/>
+
+<div [ngSwitch]="maVariable">
+    <div *ngSwitchCase="1">Pommes</div>
+    <div *ngSwitchCase="2">Poires</div>
+    <div *ngSwitchCase="3">Pêche</div>
+    <div *ngSwitchDefault>Entrez 1, 2 ou 3</div>
+</div>
