@@ -20,8 +20,7 @@ import { TemperaturePipe } from './pipes/temperature.pipe';
     AboutComponent,
     EnfantComponent,
     NavComponent,
-    FourOFourComponent,
-    TemperaturePipe
+    FourOFourComponent
   ],
   imports: [
     BrowserModule,

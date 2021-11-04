@@ -14,3 +14,8 @@
 <h4>Custom Pipe</h4>
 
 <p>tempéérature en C° : {{maVar4}}°C || Température en Fahrenheit : {{maVar4 | toFahrenheit}}°F</p>
+
+<hr/>
+<h4>Custom Pipe avec paramètres</h4>
+<p>Temperature en Celcius : {{maVar4 | temperature : 'c' | number : '2.1-3'}}</p>
+<p>Temperature en Fahrenheit : {{maVar4 | temperature : 'f'}}</p>
