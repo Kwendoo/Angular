@@ -1,0 +1,7 @@
+<h4>Exercice 2 : Créer un chronometre</h4>
+
+<p>Temps écoulé : {{temps | toTime}}</p>
+
+<input type="button" (click)="start()" value="Start" [disabled]="timer">
+<input type="button" (click)="stop()" value="Pause" [disabled]="!timer">
+<input type="button" (click)="reset()" value="Reset" [disabled]="!timer">
