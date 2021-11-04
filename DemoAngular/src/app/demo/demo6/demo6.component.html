@@ -1,1 +1,20 @@
-<p>demo6 works!</p>
+<h3>Component Directives</h3>
+
+
+<h4>NgStyle</h4>
+<p [ngStyle]="currentStyle">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis suscipit, temporibus ab corporis doloremque repudiandae ducimus sunt voluptatem, sint facilis error ullam? Atque natus illo cum rem eveniet architecto.    
+</p>
+
+<input type="button" (click)="switchBold()" value="Bold"> &nbsp;
+<input type="button" (click)="switchItalic()" value="Italic"> &nbsp;
+<input type="button" (click)="switchSize()" value="Size"> &nbsp;
+
+<hr/>
+<h4>NgClass</h4>
+<p [ngClass]="{maClass : class}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis placeat natus debitis. Consectetur harum cumque quaerat, nesciunt in illo! Consequatur recusandae quisquam optio. Vero expedita quaerat similique autem architecto!    
+</p>
+
+<input type="button" (click)="switchClass()" value="Pique moi les yeux!">
+
