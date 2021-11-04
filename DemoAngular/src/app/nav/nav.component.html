@@ -1,4 +1,7 @@
-<h4>Démos</h4>
+
+
+<!-- Menu avant exo directive -->
+<!-- <h4>Démos</h4>
 <ul>
     <li>
         <a routerLink="home">Home</a>
@@ -36,4 +39,19 @@
     <li>
         <a routerLink="exercice/exo2-chronometer">Exercice 2 | Chrono</a>
     </li>
-</ul>
+</ul> -->
+
+<!-- menu après exo directives -->
+
+<div class="nav">
+    <ul>
+        <li *ngFor="let lien of listLien; let i = index">
+            <a [routerLink]="lien.url" (click)="toggleVisible(i)" [ngClass]="{'master' : lien.children}">{{lien.title}}</a>
+            <ul *ngIf="lien.children && lien.isVisible">
+                <li *ngFor="let sousLien of lien.children">
+                    <a [routerLink]="sousLien.url">{{sousLien.title}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
