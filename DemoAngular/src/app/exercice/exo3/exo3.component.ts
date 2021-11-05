@@ -24,4 +24,4 @@ export class Exo3Component implements OnInit {
     this.liste.splice(index, 1);
   }
 
-}
+} 

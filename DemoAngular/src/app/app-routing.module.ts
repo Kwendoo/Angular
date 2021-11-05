@@ -2,8 +2,6 @@ import { componentFactoryName } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { DemoComponent } from './demo/demo.component';
-import { Demo1Component } from './demo/demo1/demo1.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { EnfantComponent } from './home/enfant/enfant.component';
 import { HomeComponent } from './home/home.component';

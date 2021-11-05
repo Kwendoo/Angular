@@ -1,0 +1,8 @@
+<h4>Shopping List v2.0</h4>
+<p *ngFor="let item of liste; let i = index">
+    {{item.Quantity}} - {{item.Name}}
+
+    <input type="button" value="+" (click)="addQtyItem(i)">&nbsp;
+    <input type="button" value="-" (click)="removeQtyItem(i)">&nbsp;
+    <input type="button" value="supprimer" (click)="removeItem(i)">
+</p> 

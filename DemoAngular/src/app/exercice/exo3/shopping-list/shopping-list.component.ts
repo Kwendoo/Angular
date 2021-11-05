@@ -22,4 +22,4 @@ export class ShoppingListComponent implements OnInit {
     this.deleteItem.emit(index);
   }
 
-}
+} 

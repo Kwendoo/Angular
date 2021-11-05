@@ -1,0 +1,14 @@
+<h3>Exercice 3 - Shopping Liste v2.0</h3>
+<h4>Ajout d'item à la liste</h4>
+
+<input type="text" [(ngModel)]="articleName">
+<input type="button" (click)="ajoutItem()" value="ajouter">
+
+<hr/>
+
+<app-shopping-list-v2 
+    [liste]="liste"
+    (deleteItem)="deleteItem($event)"
+    (addQty)="addQtyItem($event)"
+    (removeQty)="removeQtyItem($event)"
+    ></app-shopping-list-v2>
