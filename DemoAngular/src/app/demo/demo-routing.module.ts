@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DemoComponent } from './demo.component';
 import { Demo1Component } from './demo1/demo1.component';
+import { Demo10Component } from './demo10/demo10.component';
+import { Demo11Component } from './demo11/demo11.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
@@ -21,7 +23,9 @@ const routes: Routes = [
     {path : 'demo6', component : Demo6Component},
     {path : 'demo7', component : Demo7Component},
     {path : 'demo8', component : Demo8Component},
-    {path : 'demo9', component : Demo9Component}
+    {path : 'demo9', component : Demo9Component},
+    {path : 'demo10', component : Demo10Component},
+    {path : 'demo11', component : Demo11Component}
   ]},
   {path : '**', redirectTo : 'notFound'}
 ];
