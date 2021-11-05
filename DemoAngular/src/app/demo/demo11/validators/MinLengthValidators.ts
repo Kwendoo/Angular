@@ -4,7 +4,17 @@ import { AbstractControl, ValidatorFn } from "@angular/forms";
 export function MinLengthValidator(longueur : number) : ValidatorFn | null{
 
     return (control : AbstractControl) => {
-        let value : string = control.value
+        let val : string = control.value
+
+        if(val == null){
+            return null;
+        }
+        if(val.length < longueur) {
+            return {
+            'Error' : 'To short'
+            }
+        }
+        return null;
     }
 
 }

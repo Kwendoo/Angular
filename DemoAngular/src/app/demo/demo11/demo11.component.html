@@ -1,1 +1,27 @@
-<p>demo11 works!</p>
+<h3>Customs Validations</h3>
+
+<form [formGroup]="myFormGroup">
+
+    <p>Champ 1 :
+
+        <input type="text" formControlName="myControl1">
+
+    </p>
+    <p *ngIf="myFormGroup.controls['myControl1'].invalid">
+        {{myFormGroup.controls['myControl1'].errors['ToShortError']}}
+    </p>
+    
+
+    <p>Champ 2 :
+
+        <input type="text" formControlName="myControl2">
+
+    </p>
+    <p *ngIf="myFormGroup.controls['myControl2'].invalid">
+        {{myFormGroup.controls['myControl2'].errors['Error']}}
+    </p>
+    <p>
+        <input type="submit" [disabled]="!myFormGroup.valid" value="Click me!">
+    </p>
+
+</form>

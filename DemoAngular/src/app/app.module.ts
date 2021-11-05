@@ -7,9 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EnfantComponent } from './home/enfant/enfant.component';
 import { NavComponent } from './nav/nav.component';
-import { FourOFourComponent } from './four-o-four/four-o-four.component';
-import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { DemoRoutingModule } from './demo/demo-routing.module';
+import { ExerciceRoutingModule } from './exercice/exercice-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,13 +17,14 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     AboutComponent,
     EnfantComponent,
-    NavComponent,
-    FourOFourComponent
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    DemoRoutingModule,
+    ExerciceRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
