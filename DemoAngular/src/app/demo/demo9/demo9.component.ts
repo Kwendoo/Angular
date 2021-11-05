@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeOutService } from './services/fake-out.service';
 
 @Component({
   selector: 'app-demo9',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo9Component implements OnInit {
 
-  constructor() { }
+  isConnected : boolean;
+
+  constructor(private _authService : FakeOutService) { 
+    
+  } 
 
   ngOnInit(): void {
+    this.isConnected = this._authService.isConnected;
+  }
+
+  login(){
+    this._authService.connected();
+    this.isConnected = this._authService.isConnected;
+  }
+
+  logout(){
+    this._authService.disconnected();
+    this.isConnected = this._authService.isConnected;
   }
 
 }
