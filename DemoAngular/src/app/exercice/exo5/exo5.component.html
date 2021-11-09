@@ -1,0 +1,5 @@
+<h3>Fan list of series</h3>
+
+<p *ngFor="let fan of fanList; let i = index">
+    <a [routerLink]="['../resolvedList/'+i]">{{fan}}</a>
+</p>

@@ -10,6 +10,8 @@ import { ShoppingListComponent } from './exo3/shopping-list/shopping-list.compon
 import { FormsModule } from '@angular/forms';
 import { Exo4Component } from './exo4/exo4.component';
 import { ShoppingListV2Component } from './exo4/shopping-list-v2/shopping-list-v2.component';
+import { Exo5Component } from './exo5/exo5.component';
+import { ResolvedComponent } from './exo5/resolvedList/resolved-list.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ShoppingListV2Component } from './exo4/shopping-list-v2/shopping-list-v
     Exo3Component,
     ShoppingListComponent,
     Exo4Component,
-    ShoppingListV2Component
+    ShoppingListV2Component,
+    Exo5Component,
+    ResolvedComponent,
   ],
   imports: [
     CommonModule,

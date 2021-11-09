@@ -8,6 +8,9 @@ import { Demo12Component } from './demo12/demo12.component';
 import { RecupParamComponent } from './demo12/recup-param/recup-param.component';
 import { AuthGuardGuard } from './demo13/auth-guard.guard';
 import { Demo13Component } from './demo13/demo13.component';
+import { Demo14Component } from './demo14/demo14.component';
+import { ObjectResolverResolver } from './demo14/object-resolver.resolver';
+import { ResolvedComponent } from './demo14/resolved/resolved.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
@@ -32,7 +35,9 @@ const routes: Routes = [
     {path : 'demo11', component : Demo11Component},
     {path : 'demo12', component : Demo12Component},
     {path : 'recup/:param', component : RecupParamComponent},
-    {path : 'demo13', canActivate : [AuthGuardGuard], component : Demo13Component}
+    {path : 'demo13', canActivate : [AuthGuardGuard], component : Demo13Component},
+    {path : 'demo14', component : Demo14Component},
+    {path : 'resolved/:index', resolve : {monObject : ObjectResolverResolver}, component : ResolvedComponent}
   ]},
   {path : '**', redirectTo : 'notFound'}
 ];

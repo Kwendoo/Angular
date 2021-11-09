@@ -20,6 +20,8 @@ import { Demo11Component } from './demo11/demo11.component';
 import { Demo12Component } from './demo12/demo12.component';
 import { RecupParamComponent } from './demo12/recup-param/recup-param.component';
 import { Demo13Component } from './demo13/demo13.component';
+import { Demo14Component } from './demo14/demo14.component';
+import { ResolvedComponent } from './demo14/resolved/resolved.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { Demo13Component } from './demo13/demo13.component';
     Demo11Component,
     Demo12Component,
     RecupParamComponent,
-    Demo13Component
+    Demo13Component,
+    Demo14Component,
+    ResolvedComponent
   ],
   imports: [
     CommonModule,
