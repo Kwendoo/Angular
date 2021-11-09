@@ -27,7 +27,9 @@ export class NavComponent implements OnInit {
         {url : '/demo/demo8', title : 'Demo 8 - Input/Output'},
         {url : '/demo/demo9', title : 'Demo 9 - Injection de dépendances'},
         {url : '/demo/demo10', title : 'Demo 10 - Formulaires'},
-        {url : '/demo/demo11', title : 'Demo 11 - Customs Validators'}
+        {url : '/demo/demo11', title : 'Demo 11 - Customs Validators'},
+        {url : '/demo/demo12', title : 'Demo 12 - Routing / Recup param'},
+        {url : '/demo/demo13', title : 'Demo 13 - Guard'}
       ]},
       {title : 'Exercices', children : [
         {url : '/exercice/exo2-chronometer', title : 'Exo 1 - Chronomètre'},
