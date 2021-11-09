@@ -12,6 +12,7 @@ import { Exo4Component } from './exo4/exo4.component';
 import { ShoppingListV2Component } from './exo4/shopping-list-v2/shopping-list-v2.component';
 import { Exo5Component } from './exo5/exo5.component';
 import { ResolvedComponent } from './exo5/resolvedList/resolved-list.component';
+import { CorrectionExo5Component } from './correction-exo5/correction-exo5.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ResolvedComponent } from './exo5/resolvedList/resolved-list.component';
     ShoppingListV2Component,
     Exo5Component,
     ResolvedComponent,
+    CorrectionExo5Component,
   ],
   imports: [
     CommonModule,
