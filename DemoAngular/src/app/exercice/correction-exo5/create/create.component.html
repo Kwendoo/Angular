@@ -1,0 +1,25 @@
+<h3>Nouveau fan</h3>
+<form formGroup="fg" (ngSubmit)="submitForm()">
+    <div style="border: 1px black solid;">
+        <p>
+            <label>Nom : </label>
+            <input type="text" formControlName="nom">
+        </p>
+        <p>
+            <label>Date de naissance : </label>
+            <input type="date" formControlName="dateNaiss">
+        </p>
+        <div *ngIf="fg.controls['dateNaiss'].invalid" style="color: red;">
+            {{fg.controls['dateNaiss'].errors['dateError']}}
+        </div>
+    </div>
+    <hr />
+    <a (click)="addSeries()">Ajouter une série</a>
+    <div *ngIf="getSeries().controls" formArrayName="series">
+        <p *ngFor="let c of getSeries().controls; let i = index">
+            Série {{i+1}} <input type="text" formControlName="i">
+            <button type="button" (click)="removeSeries(i)">X</button>
+        </p>
+    </div>
+    <button type="submit" [disabled]="fg.invalid">Valider</button>
+</form>

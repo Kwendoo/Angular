@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CorrectionExo5Component } from './correction-exo5/correction-exo5.component';
+import { CreateComponent } from './correction-exo5/create/create.component';
 import { ExerciceComponent } from './exercice.component';
 import { Exo2ChronometerComponent } from './exo2-chronometer/exo2-chronometer.component';
 import { Exo3Component } from './exo3/exo3.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
     {path : "exo4", component : Exo4Component},
     {path : 'exo5', component : Exo5Component},
     {path : "resolvedList/:index", resolve : {monFan : ObjectResolverResolver}, component : ResolvedComponent},
-    {path : 'correction-exo5', component : CorrectionExo5Component}
+    {path : 'correction-exo5', component : CorrectionExo5Component},
+    {path : 'correction-exo5/create', component : CreateComponent}
   
   ]},
   {path : '**', redirectTo : 'notFound'}

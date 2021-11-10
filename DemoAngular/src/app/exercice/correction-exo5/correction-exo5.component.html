@@ -1,1 +1,15 @@
-<p>correction-exo5 works!</p>
+<h3>Une liste de Fan de séries</h3>
+
+<h4>
+    <a routerLink="/exercice/correction-exo5/create">Ajouter un fan</a>
+</h4>
+
+<ol>
+    <li *ngFor="let fan of fanListe, let i = index">
+        <a [routerLink]="['exercice/correction-exo5/update' + i]">{{fan.nom}}</a>
+        <button type="button" (click)="toUpdate(i)">Update</button>
+        <button type="button" (click)="toDelete(i)">Delete</button>
+    </li>
+</ol>
+
+<router-outlet></router-outlet>
