@@ -30,7 +30,8 @@ export class NavComponent implements OnInit {
         {url : '/demo/demo11', title : 'Demo 11 - Customs Validators'},
         {url : '/demo/demo12', title : 'Demo 12 - Routing / Recup param'},
         {url : '/demo/demo13', title : 'Demo 13 - Guard'},
-        {url : '/demo/demo14', title : 'Demo 14 - Resolver'}
+        {url : '/demo/demo14', title : 'Demo 14 - Resolver'},
+        {url : '/demo/demo15', title : 'Demo 15 - Storage'},
       ]},
       {title : 'Exercices', children : [
         {url : '/exercice/exo2-chronometer', title : 'Exo 1 - Chronomètre'},
